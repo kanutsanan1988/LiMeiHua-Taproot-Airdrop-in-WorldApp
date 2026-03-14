@@ -1,0 +1,706 @@
+/**
+ * LiMeiHua Taproot Airdrop in WorldApp - Frontend CSS
+ * 
+ * ชุดซอฟต์แวร์ชุดนี้ มีไว้เพื่อเป็นโครงสร้างพื้นฐานทางการเงินยุคใหม่
+ * เพื่อรองรับการไหลของเงินจำนวนมหาศาลของท่านผู้เฒ่าหลี่เหมยฮัว หรือ LiMeiHua Grand Mother
+ * และ source code นี้สร้างโดย Mr.Kanutsanan Pongpanna (นายคณัสนันท์ พงษ์พันนา)
+ * URL: https://chatgpt.com/g/g-68d289535dec81919445deb9830f2d8e-kanutsanan-pongpanna
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #00d9ff;
+  --secondary-color: #ff006e;
+  --accent-color: #ffbe0b;
+  --dark-bg: #050812;
+  --card-bg: #0f1419;
+  --border-color: #1a202c;
+  --text-primary: #ffffff;
+  --text-secondary: #a0aec0;
+  --success-color: #10b981;
+  --warning-color: #f59e0b;
+  --error-color: #ef4444;
+}
+
+body {
+  font-family: 'Orbitron', 'Inter', sans-serif;
+  background: var(--dark-bg);
+  color: var(--text-primary);
+  overflow-x: hidden;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.app-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(135deg, #050812 0%, #0f1419 50%, #050812 100%);
+}
+
+.glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.1;
+  animation: float 8s ease-in-out infinite;
+}
+
+.glow-1 {
+  width: 400px;
+  height: 400px;
+  background: var(--primary-color);
+  top: -100px;
+  left: -100px;
+  animation-delay: 0s;
+}
+
+.glow-2 {
+  width: 300px;
+  height: 300px;
+  background: var(--secondary-color);
+  bottom: 100px;
+  right: -50px;
+  animation-delay: 2s;
+}
+
+.glow-3 {
+  width: 350px;
+  height: 350px;
+  background: var(--accent-color);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-delay: 4s;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(30px); }
+}
+
+.app-content {
+  flex: 1;
+  padding: 40px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Verification Container */
+.verification-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.verification-card {
+  background: var(--card-bg);
+  border: 2px solid var(--primary-color);
+  border-radius: 16px;
+  padding: 60px 40px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 0 30px rgba(0, 217, 255, 0.2);
+  animation: slideIn 0.6s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.verification-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.verification-header h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.verification-subtitle {
+  color: var(--text-secondary);
+  font-size: 16px;
+}
+
+.verification-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.world-id-badge {
+  background: rgba(16, 185, 129, 0.2);
+  border: 2px solid var(--success-color);
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+}
+
+.badge-icon {
+  font-size: 24px;
+  color: var(--success-color);
+}
+
+.badge-text {
+  color: var(--success-color);
+  font-weight: bold;
+}
+
+.user-id-input {
+  background: var(--dark-bg);
+  border: 2px solid var(--border-color);
+  color: var(--text-primary);
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+.user-id-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 10px rgba(0, 217, 255, 0.2);
+}
+
+.verify-button {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: var(--dark-bg);
+  border: none;
+  padding: 16px 40px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 20px rgba(0, 217, 255, 0.3);
+}
+
+.verify-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 0 30px rgba(0, 217, 255, 0.5);
+}
+
+.verify-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.verification-note {
+  color: var(--text-secondary);
+  font-size: 12px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* Dashboard Header */
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.dashboard-header h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.dashboard-subtitle {
+  color: var(--text-secondary);
+  font-size: 16px;
+}
+
+/* Admin Dashboard */
+.admin-dashboard,
+.user-airdrop-claim {
+  animation: slideIn 0.6s ease-out;
+}
+
+.admin-content,
+.claim-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+/* Campaigns Section */
+.campaigns-section,
+.history-section,
+.eligibility-section {
+  background: var(--card-bg);
+  border: 2px solid var(--border-color);
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(0, 217, 255, 0.1);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.section-header h2 {
+  font-size: 24px;
+  color: var(--primary-color);
+}
+
+.create-campaign-btn {
+  background: transparent;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.create-campaign-btn:hover {
+  background: var(--primary-color);
+  color: var(--dark-bg);
+  box-shadow: 0 0 15px rgba(0, 217, 255, 0.3);
+}
+
+/* Create Form */
+.create-form {
+  background: rgba(0, 217, 255, 0.05);
+  border: 2px dashed var(--primary-color);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-input,
+.form-textarea {
+  background: var(--dark-bg);
+  border: 2px solid var(--border-color);
+  color: var(--text-primary);
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 10px rgba(0, 217, 255, 0.2);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-primary,
+.btn-secondary {
+  flex: 1;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  color: var(--dark-bg);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 0 15px rgba(0, 217, 255, 0.3);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--text-secondary);
+  border: 2px solid var(--border-color);
+}
+
+.btn-secondary:hover {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+/* Campaigns Grid */
+.campaigns-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.campaign-card {
+  background: rgba(0, 217, 255, 0.05);
+  border: 2px solid var(--border-color);
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.campaign-card:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 15px rgba(0, 217, 255, 0.2);
+}
+
+.campaign-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.campaign-header h3 {
+  font-size: 18px;
+  color: var(--primary-color);
+}
+
+.campaign-status {
+  background: rgba(16, 185, 129, 0.2);
+  color: var(--success-color);
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.campaign-details {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.campaign-details p {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.view-btn {
+  background: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.view-btn:hover {
+  background: var(--primary-color);
+  color: var(--dark-bg);
+}
+
+/* Campaigns List */
+.campaigns-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.campaign-item {
+  background: rgba(0, 217, 255, 0.05);
+  border: 2px solid var(--border-color);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.campaign-item:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 15px rgba(0, 217, 255, 0.2);
+}
+
+.campaign-info {
+  flex: 1;
+}
+
+.campaign-info h3 {
+  color: var(--primary-color);
+  margin-bottom: 8px;
+}
+
+.campaign-desc {
+  color: var(--text-secondary);
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.campaign-stats {
+  display: flex;
+  gap: 15px;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.check-btn {
+  background: var(--primary-color);
+  color: var(--dark-bg);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.check-btn:hover {
+  box-shadow: 0 0 15px rgba(0, 217, 255, 0.3);
+}
+
+/* Eligibility Section */
+.eligibility-card {
+  background: rgba(0, 217, 255, 0.05);
+  border: 2px solid var(--border-color);
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.eligibility-card.eligible {
+  border-color: var(--success-color);
+  background: rgba(16, 185, 129, 0.05);
+}
+
+.eligibility-card.ineligible {
+  border-color: var(--error-color);
+  background: rgba(239, 68, 68, 0.05);
+}
+
+.status-icon {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.status-message {
+  color: var(--text-secondary);
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.claim-details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.claim-details p {
+  color: var(--text-primary);
+  font-weight: bold;
+}
+
+.claim-btn {
+  background: var(--success-color);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.claim-btn:hover {
+  box-shadow: 0 0 15px rgba(16, 185, 129, 0.3);
+}
+
+/* History Section */
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.history-item {
+  background: rgba(0, 217, 255, 0.05);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.history-item:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 10px rgba(0, 217, 255, 0.1);
+}
+
+.history-info {
+  flex: 1;
+}
+
+.claim-id {
+  font-family: 'Courier New', monospace;
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+}
+
+.claim-date {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.claim-amount {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.amount {
+  font-weight: bold;
+  color: var(--primary-color);
+  font-size: 18px;
+}
+
+.status {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.status.completed {
+  background: rgba(16, 185, 129, 0.2);
+  color: var(--success-color);
+}
+
+.status.pending {
+  background: rgba(245, 158, 11, 0.2);
+  color: var(--warning-color);
+}
+
+/* Empty State */
+.empty-state {
+  color: var(--text-secondary);
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 16px;
+}
+
+/* Footer */
+.app-footer {
+  text-align: center;
+  padding: 30px 20px;
+  border-top: 2px solid var(--border-color);
+  color: var(--text-secondary);
+  margin-top: 40px;
+}
+
+.app-footer p {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.dedication {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .verification-card {
+    padding: 40px 20px;
+  }
+
+  .dashboard-header h1 {
+    font-size: 32px;
+  }
+
+  .campaigns-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .campaign-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .check-btn {
+    width: 100%;
+  }
+
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .create-campaign-btn {
+    width: 100%;
+  }
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--dark-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color);
+}
