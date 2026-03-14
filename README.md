@@ -1,654 +1,657 @@
-/**
- * LiMeiHua Taproot Airdrop in WorldApp - README (28 Languages)
- * 
- * ชุดซอฟต์แวร์ชุดนี้ มีไว้เพื่อเป็นโครงสร้างพื้นฐานทางการเงินยุคใหม่
- * เพื่อรองรับการไหลของเงินจำนวนมหาศาลของท่านผู้เฒ่าหลี่เหมยฮัว หรือ LiMeiHua Grand Mother
- * และ source code นี้สร้างโดย Mr.Kanutsanan Pongpanna (นายคณัสนันท์ พงษ์พันนา)
- * URL: https://chatgpt.com/g/g-68d289535dec81919445deb9830f2d8e-kanutsanan-pongpanna
- */
+# LiMeiHua Taproot Assets - Comprehensive Multi-Language Documentation
 
-# LiMeiHua Taproot Airdrop in WorldApp
-
-A comprehensive **World ID-verified Airdrop Distribution System** for Taproot Assets tokens integrated with WorldApp ecosystem. Prevent bot attacks and ensure fair distribution through cryptographic identity verification.
-
-## 🌍 Available Languages
-
-- [English](#english)
-- [ไทย](#thai)
-- [中文](#chinese)
-- [日本語](#japanese)
-- [한국어](#korean)
-- [Español](#spanish)
-- [Français](#french)
-- [Deutsch](#german)
-- [Português](#portuguese)
-- [Русский](#russian)
-- [العربية](#arabic)
-- [हिन्दी](#hindi)
-- [Tiếng Việt](#vietnamese)
-- [Bahasa Indonesia](#indonesian)
-- [Bahasa Melayu](#malay)
-- [Türkçe](#turkish)
-- [Italiano](#italian)
-- [Nederlands](#dutch)
-- [Polski](#polish)
-- [Svenska](#swedish)
-- [Українська](#ukrainian)
-- [Čeština](#czech)
-- [Română](#romanian)
-- [Ελληνικά](#greek)
-- [עברית](#hebrew)
-- [বাংলা](#bengali)
-- [Filipino](#filipino)
-- [Kiswahili](#swahili)
+> ชุดซอฟต์แวร์ชุดนี้ มีไว้เพื่อเป็นโครงสร้างพื้นฐานทางการเงินยุคใหม่เพื่อรองรับการไหลของเงินจำนวนมหาศาลของท่านผู้เฒ่าหลี่เหมยฮัว หรือ LiMeiHua Grand Mother 
+> และ source code นี้สร้างโดย Mr.Kanutsanan Pongpanna (นายคณัสนันท์ พงษ์พันนา) 
+> URL: https://chatgpt.com/g/g-68d289535dec81919445deb9830f2d8e-kanutsanan-pongpanna
 
 ---
 
-## English
+## 📖 Table of Contents
 
-### 🚀 LiMeiHua Taproot Airdrop in WorldApp
+- [🌐 Available Languages](#-available-languages)
+- [📚 Documentation by Language](#-documentation-by-language)
+- [🎯 Project Overview](#-project-overview)
+- [✨ Features](#-features)
+- [🚀 Getting Started](#-getting-started)
+- [💡 Use Cases](#-use-cases)
+- [🔧 Technical Stack](#-technical-stack)
+- [📊 Language Statistics](#-language-statistics)
 
-A cutting-edge airdrop distribution platform that leverages **World ID verification** to prevent Sybil attacks and ensure fair token distribution. Perfect for projects launching Taproot Assets tokens on Bitcoin Lightning Network.
+---
+
+## 🌐 Available Languages
+
+This project supports **40+ languages** across multiple regions:
+
+### ASEAN Region (9 Languages)
+🇹🇭 Thai | 🇱🇦 Lao | 🇲🇲 Burmese | 🇻🇳 Vietnamese | 🇰🇭 Khmer | 🇲🇾 Malay | 🇮🇩 Indonesian | 🇵🇭 Filipino | 🇱🇰 Tamil
+
+### Other Regions (5 Languages)
+🇷🇺 Russian | 🇲🇳 Mongolian | 🇱🇰 Sinhala | 🇧🇹 Dzongkha | 🇳🇵 Nepali
+
+### India (21 Languages)
+🇮🇳 Hindi | Bengali | Telugu | Marathi | Tamil | Urdu | Gujarati | Kannada | Malayalam | Odia | Punjabi | Assamese | Maithili | Santali | Kashmiri | Nepali | Sindhi | Dogri | Manipuri | Bodo | Konkani
+
+### Global (20+ Languages)
+🌍 English | 🇨🇳 Chinese (Simplified & Traditional) | 🇯🇵 Japanese | 🇰🇷 Korean | 🇪🇸 Spanish | 🇫🇷 French | 🇩🇪 German | 🇵🇹 Portuguese | 🇸🇦 Arabic | 🇹🇷 Turkish | 🇮🇹 Italian | 🇳🇱 Dutch | 🇵🇱 Polish | 🇸🇪 Swedish | 🇺🇦 Ukrainian | 🇨🇿 Czech | 🇷🇴 Romanian | 🇬🇷 Greek | 🇮🇱 Hebrew | 🇹🇿 Swahili
+
+---
+
+## 📚 Documentation by Language
+
+### English Documentation
+**LiMeiHua Taproot Assets** is a modern financial infrastructure platform designed to support massive money flow for LiMeiHua Grand Mother. This comprehensive system enables users to create, manage, and trade Taproot Assets tokens on the Bitcoin Lightning Network.
 
 **Key Features:**
-- ✅ World ID Verification for Sybil protection
-- ✅ Batch recipient upload (CSV support)
-- ✅ Admin campaign management dashboard
-- ✅ User-friendly claim interface
-- ✅ Real-time eligibility checking
-- ✅ Transaction history tracking
-- ✅ Cyberpunk UI theme
-- ✅ WorldApp ecosystem integration
+- Create custom Taproot Assets tokens with flexible parameters
+- Manage token supply (fixed, mintable, or burnable)
+- Calculate gas fees and transaction costs
+- Send and receive tokens on Lightning Network
+- Multi-platform support (Web, Mobile, Desktop)
+- World ID integration for enhanced security
+- Airdrop distribution system
+- Payment gateway integration
+- Lightning Node management
 
-### 🎯 How It Works
-
-1. **Admin Creates Campaign** - Set up airdrop with token details
-2. **Upload Recipients** - Batch upload eligible addresses
-3. **Users Verify with World ID** - Prove personhood
-4. **Check Eligibility** - System verifies user is in recipient list
-5. **Claim Airdrop** - Receive tokens to Lightning wallet
-6. **Track History** - View all claims and transactions
-
-### 📋 API Endpoints
-
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| POST | `/api/world-id/verify` | Verify World ID token |
-| GET | `/api/world-id/status/:userId` | Check verification status |
-| POST | `/api/campaigns/create` | Create airdrop campaign |
-| GET | `/api/campaigns` | List all campaigns |
-| GET | `/api/campaigns/:campaignId` | Get campaign details |
-| POST | `/api/campaigns/:campaignId/batch-upload` | Upload batch recipients |
-| POST | `/api/airdrop/check-eligibility` | Check user eligibility |
-| POST | `/api/airdrop/claim` | Claim airdrop tokens |
-| GET | `/api/airdrop/history/:userId` | Get claim history |
-| GET | `/api/campaigns/:campaignId/stats` | Get campaign statistics |
-
-### 🔒 Security Features
-
-- **World ID Verification**: Cryptographic proof of personhood
-- **Sybil Protection**: One person = one claim
-- **Batch Processing**: Efficient large-scale distribution
-- **Immutable Records**: All claims permanently recorded
-- **Rate Limiting**: Prevent abuse
-- **Input Validation**: Comprehensive data validation
-
-### 🚀 Quick Start
-
-```bash
-# Clone repository
-git clone https://github.com/kanutsanan1988/LiMeiHua-Taproot-Airdrop-in-WorldApp.git
-cd limeihua-taproot-airdrop-worldapp
-
-# Install dependencies
-npm install
-
-# Configure environment
-cp .env.example .env
-# Edit .env with your configuration
-
-# Development
-npm run dev
-
-# Production build
-npm run build
-npm start
-```
-
-### 📦 Project Structure
-
-```
-limeihua-taproot-airdrop-worldapp/
-├── backend/
-│   ├── server.js              # Express server
-│   └── routes/                # API endpoints
-├── frontend/
-│   ├── src/
-│   │   ├── App.jsx            # Main component
-│   │   ├── App.css            # Cyberpunk styling
-│   │   └── components/        # React components
-│   └── public/                # Static assets
-├── .env.example               # Environment template
-├── package.json               # Dependencies
-└── README.md                  # This file
-```
+**Getting Started:**
+1. Visit the platform or install the application
+2. Connect your Lightning Network wallet
+3. Create your first Taproot Assets token
+4. Start managing your digital assets
 
 ---
 
-## ไทย
-
-### 🚀 ระบบแจกจ่าย Airdrop ของ LiMeiHua ใน WorldApp
-
-แพลตฟอร์มแจกจ่าย Airdrop ที่ใช้ **World ID verification** เพื่อป้องกัน Sybil attacks และรับประกันการแจกจ่ายโทเค็นที่ยุติธรรม เหมาะสำหรับโปรเจกต์ที่เปิดตัว Taproot Assets tokens บน Bitcoin Lightning Network
+### ไทย (Thai Documentation)
+**LiMeiHua Taproot Assets** เป็นแพลตฟอร์มโครงสร้างพื้นฐานทางการเงินสมัยใหม่ที่ออกแบบมาเพื่อรองรับการไหลของเงินจำนวนมหาศาลของท่านผู้เฒ่าหลี่เหมยฮัว ระบบที่ครอบคลุมนี้ช่วยให้ผู้ใช้สามารถสร้าง จัดการ และซื้อขาย Taproot Assets tokens บน Bitcoin Lightning Network
 
 **ฟีเจอร์หลัก:**
-- ✅ ยืนยันตัวตนด้วย World ID เพื่อป้องกัน Sybil
-- ✅ อัปโหลดผู้รับเป็น batch (รองรับ CSV)
-- ✅ แดชบอร์ดจัดการแคมเปญสำหรับ Admin
-- ✅ อินเตอร์เฟซที่ใช้งานง่ายสำหรับผู้ใช้
-- ✅ ตรวจสอบความมีสิทธิ์แบบเรียลไทม์
-- ✅ ติดตามประวัติธุรกรรม
-- ✅ ธีม Cyberpunk UI
-- ✅ การรวมเข้ากับระบบนิเวศ WorldApp
+- สร้าง Taproot Assets tokens ที่กำหนดเองได้
+- จัดการปริมาณ token (fixed, mintable, burnable)
+- คำนวณค่าแก๊สและค่าธุรกรรม
+- ส่งและรับ tokens บน Lightning Network
+- รองรับหลายแพลตฟอร์ม (Web, Mobile, Desktop)
+- บูรณาการ World ID เพื่อความปลอดภัยที่ดีขึ้น
+- ระบบแจกจ่าย Airdrop
+- บูรณาการ Payment Gateway
+- จัดการ Lightning Node
+
+**เริ่มต้นใช้งาน:**
+1. เยี่ยมชมแพลตฟอร์มหรือติดตั้งแอปพลิเคชัน
+2. เชื่อมต่อ Lightning Network wallet ของคุณ
+3. สร้าง Taproot Assets token แรกของคุณ
+4. เริ่มจัดการสินทรัพย์ดิจิทัลของคุณ
 
 ---
 
-## 中文
+### ລາວ (Lao Documentation)
+**LiMeiHua Taproot Assets** ແມ່ນແພັດຟອມໂຄງສ້າງພື້ນຖານດ້ານການເງິນສະໄໝໃໝ່ທີ່ອອກແບບມາເພື່ອສະໜັບສະໜູນການໄຫຼຂອງເງິນຈໍານວນຫຼວງຫຼາຍສໍາລັບທ່ານຜູ້ເຖົ້າຫລີ່ເຫມຍຮວົ (LiMeiHua Grand Mother)
 
-### 🚀 LiMeiHua Taproot Airdrop in WorldApp
-
-一个尖端的空投分发平台，利用 **World ID 验证** 来防止女巫攻击并确保公平的代币分发。非常适合在比特币闪电网络上推出 Taproot Assets 代币的项目。
-
-**主要功能：**
-- ✅ World ID 验证以防止女巫攻击
-- ✅ 批量收件人上传（支持 CSV）
-- ✅ 管理员活动管理仪表板
-- ✅ 用户友好的领取界面
-- ✅ 实时资格检查
-- ✅ 交易历史跟踪
-- ✅ 赛博朋克 UI 主题
-- ✅ WorldApp 生态系统集成
+**ຄຸນສົມບັດຫຼັກ:**
+- ສ້າງ Taproot Assets tokens ທີ່ກໍາຫນົດເອງໄດ້
+- ຈັດການປະລິມານ token (fixed, mintable, burnable)
+- ຄໍານວນຄ່າແກ໊ສແລະຄ່າທຸລະກໍາ
+- ສົ່ງແລະຮັບ tokens ໃນ Lightning Network
+- ສະໜັບສະໜູນຫຼາຍແພັດຟອມ (Web, Mobile, Desktop)
+- ປະສົມປະສານ World ID ສໍາລັບຄວາມປອດໄພທີ່ດີຂຶ້ນ
+- ລະບົບແຈກຢາຍ Airdrop
+- ປະສົມປະສານ Payment Gateway
+- ຈັດການ Lightning Node
 
 ---
 
-## 日本語
+### မြန်မာ (Burmese Documentation)
+**LiMeiHua Taproot Assets** သည် LiMeiHua Grand Mother အတွက် 거대한ငွေ့စီးဆင်းမှုကို ထောက်ခံရန် ဒီဇိုင်းထုတ်ထားသော ခေတ်သစ် ငွေကြေးအခြေခံ ကွန်ပ်ျူတာ ပလက်ဖောင်းဖြစ်သည်။
 
-### 🚀 LiMeiHua Taproot Airdrop in WorldApp
-
-**World ID 検証** を活用してシビル攻撃を防ぎ、公平なトークン分配を保証する最先端のエアドロップ分配プラットフォーム。ビットコイン ライトニング ネットワークで Taproot Assets トークンを立ち上げるプロジェクトに最適です。
-
-**主な機能：**
-- ✅ シビル保護のための World ID 検証
-- ✅ バッチ受信者アップロード（CSV サポート）
-- ✅ 管理者キャンペーン管理ダッシュボード
-- ✅ ユーザーフレンドリーなクレーム インターフェース
-- ✅ リアルタイム適格性チェック
-- ✅ トランザクション履歴追跡
-- ✅ サイバーパンク UI テーマ
-- ✅ WorldApp エコシステム統合
+**အဓိက ဝိသေသလက္ခဏာများ:**
+- စိတ်ကြိုက် Taproot Assets tokens များ ဖန်တီးခြင်း
+- Token ပမာណ ကိုင်တွယ်ခြင်း (fixed, mintable, burnable)
+- ဂ်ဆ ကုန်ကျစရိတ် တွက်ချက်ခြင်း
+- Lightning Network တွင် tokens ပို့ခြင်း နှင့် လက်ခံခြင်း
+- အများအပြား ပလက်ဖောင်း ထောက်ခံခြင်း (Web, Mobile, Desktop)
+- ကောင်းမွန်သော လုံခြုံရေးအတွက် World ID ပေါင်းစပ်ခြင်း
+- Airdrop ဖြန့်ဝေမှု စနစ်
+- Payment Gateway ပေါင်းစပ်ခြင်း
+- Lightning Node စီမံခန့်ခွဲခြင်း
 
 ---
 
-## 한국어
+### Tiếng Việt (Vietnamese Documentation)
+**LiMeiHua Taproot Assets** là một nền tảng cơ sở hạ tầng tài chính hiện đại được thiết kế để hỗ trợ dòng tiền khổng lồ cho bà LiMeiHua. Hệ thống toàn diện này cho phép người dùng tạo, quản lý và giao dịch các token Taproot Assets trên Bitcoin Lightning Network.
 
-### 🚀 LiMeiHua Taproot Airdrop in WorldApp
-
-**World ID 검증** 을 활용하여 Sybil 공격을 방지하고 공정한 토큰 분배를 보장하는 최첨단 에어드롭 분배 플랫폼입니다. 비트코인 라이트닝 네트워크에서 Taproot Assets 토큰을 출시하는 프로젝트에 완벽합니다.
-
-**주요 기능:**
-- ✅ Sybil 보호를 위한 World ID 검증
-- ✅ 배치 수신자 업로드(CSV 지원)
-- ✅ 관리자 캠페인 관리 대시보드
-- ✅ 사용자 친화적인 클레임 인터페이스
-- ✅ 실시간 적격성 확인
-- ✅ 거래 내역 추적
-- ✅ 사이버펑크 UI 테마
-- ✅ WorldApp 생태계 통합
+**Các Tính Năng Chính:**
+- Tạo các token Taproot Assets tùy chỉnh
+- Quản lý nguồn cung token (cố định, có thể tạo, có thể đốt)
+- Tính toán phí gas và chi phí giao dịch
+- Gửi và nhận token trên Lightning Network
+- Hỗ trợ nhiều nền tảng (Web, Mobile, Desktop)
+- Tích hợp World ID để tăng cường bảo mật
+- Hệ thống phân phối Airdrop
+- Tích hợp Payment Gateway
+- Quản lý Lightning Node
 
 ---
 
-## Español
+### ខ្មែរ (Khmer Documentation)
+**LiMeiHua Taproot Assets** ជាវេទិកាហិរញ្ញវត្ថុលោកទំនើបដែលត្រូវបានរចនាឡើងដើម្បីគាំទ្របរិមាណលុយដ៏ច្រើនសម្រាប់ម្ដាយលីមីហួ។ ប្រព័ន្ធលម្អិតនេះអនុញ្ញាតឱ្យអ្នកប្រើប្រាស់បង្កើត គ្រប់គ្រង និងលក់ទិញ Taproot Assets tokens នៅលើបណ្តាញ Bitcoin Lightning Network។
 
-### 🚀 LiMeiHua Taproot Airdrop en WorldApp
-
-Una plataforma de distribución de airdrops de vanguardia que aprovecha la **verificación de World ID** para prevenir ataques Sybil y garantizar una distribución justa de tokens. Perfecto para proyectos que lanzan tokens Taproot Assets en Bitcoin Lightning Network.
-
-**Características principales:**
-- ✅ Verificación de World ID para protección Sybil
-- ✅ Carga de destinatarios por lotes (soporte CSV)
-- ✅ Panel de gestión de campañas para administradores
-- ✅ Interfaz fácil de usar para reclamaciones
-- ✅ Verificación de elegibilidad en tiempo real
-- ✅ Seguimiento del historial de transacciones
-- ✅ Tema de interfaz de usuario ciberpunk
-- ✅ Integración del ecosistema WorldApp
+**លក្ខណៈពិសេសចម្បង:**
+- បង្កើត Taproot Assets tokens ដែលបានកែប្រែ
+- គ្រប់គ្រងការផ្គត់ផ្គង់ token (ថេរ មិនថេរ ឬអាចដុតបាន)
+- គណនាថ្លៃឧស្ម័ន និងថ្លៃប្រតិបត្តិការ
+- ផ្ញើ និងទទួល tokens នៅលើបណ្តាញ Lightning
+- គាំទ្របេតិកបទច្រើន (Web Mobile Desktop)
+- ការរួមបញ្ចូល World ID សម្រាប់សន្តិសុខប្រសើរ
+- ប្រព័ន្ធចែកចាយ Airdrop
+- ការរួមបញ្ចូល Payment Gateway
+- ការគ្រប់គ្រង Lightning Node
 
 ---
 
-## Français
+### Bahasa Melayu (Malay Documentation)
+**LiMeiHua Taproot Assets** ialah platform infrastruktur kewangan moden yang dirancang untuk menyokong aliran wang yang besar untuk Nenek LiMeiHua. Sistem komprehensif ini membolehkan pengguna membuat, menguruskan, dan berdagang token Taproot Assets di Rangkaian Bitcoin Lightning.
 
-### 🚀 LiMeiHua Taproot Airdrop dans WorldApp
-
-Une plateforme de distribution d'airdrops de pointe qui exploite la **vérification World ID** pour prévenir les attaques Sybil et garantir une distribution équitable des jetons. Parfait pour les projets lançant des jetons Taproot Assets sur Bitcoin Lightning Network.
-
-**Caractéristiques principales:**
-- ✅ Vérification World ID pour la protection Sybil
-- ✅ Téléchargement par lot de destinataires (support CSV)
-- ✅ Tableau de bord de gestion de campagne pour les administrateurs
-- ✅ Interface conviviale pour les réclamations
-- ✅ Vérification d'éligibilité en temps réel
-- ✅ Suivi de l'historique des transactions
-- ✅ Thème d'interface utilisateur cyberpunk
-- ✅ Intégration de l'écosystème WorldApp
+**Ciri-Ciri Utama:**
+- Buat token Taproot Assets tersuai
+- Urus bekalan token (tetap, boleh dicetak, boleh dibakar)
+- Kira bayaran gas dan kos transaksi
+- Hantar dan terima token di Rangkaian Lightning
+- Sokongan berbilang platform (Web, Mobile, Desktop)
+- Integrasi World ID untuk keselamatan yang lebih baik
+- Sistem pengedaran Airdrop
+- Integrasi Payment Gateway
+- Pengurusan Lightning Node
 
 ---
 
-## Deutsch
-
-### 🚀 LiMeiHua Taproot Airdrop in WorldApp
-
-Eine hochmoderne Airdrop-Verteilungsplattform, die die **World ID-Verifizierung** nutzt, um Sybil-Angriffe zu verhindern und eine faire Token-Verteilung zu gewährleisten. Perfekt für Projekte, die Taproot Assets-Token im Bitcoin Lightning Network starten.
-
-**Hauptmerkmale:**
-- ✅ World ID-Verifizierung zum Schutz vor Sybil-Angriffen
-- ✅ Batch-Upload von Empfängern (CSV-Unterstützung)
-- ✅ Admin-Kampagnenverwaltungs-Dashboard
-- ✅ Benutzerfreundliche Anspruchsschnittstelle
-- ✅ Echtzeit-Eignungsprüfung
-- ✅ Transaktionsverlauf-Tracking
-- ✅ Cyberpunk-UI-Design
-- ✅ WorldApp-Ökosystem-Integration
-
----
-
-## Português
-
-### 🚀 LiMeiHua Taproot Airdrop no WorldApp
-
-Uma plataforma de distribuição de airdrops de ponta que aproveita a **verificação World ID** para prevenir ataques Sybil e garantir uma distribuição justa de tokens. Perfeito para projetos que lançam tokens Taproot Assets na Bitcoin Lightning Network.
-
-**Características principais:**
-- ✅ Verificação World ID para proteção Sybil
-- ✅ Upload em lote de destinatários (suporte CSV)
-- ✅ Painel de gerenciamento de campanhas para administradores
-- ✅ Interface amigável para reivindicações
-- ✅ Verificação de elegibilidade em tempo real
-- ✅ Rastreamento do histórico de transações
-- ✅ Tema de interface do usuário cyberpunk
-- ✅ Integração do ecossistema WorldApp
-
----
-
-## Русский
-
-### 🚀 LiMeiHua Taproot Airdrop в WorldApp
-
-Авангардная платформа распределения эирдропов, которая использует **проверку World ID** для предотвращения атак Sybil и обеспечения справедливого распределения токенов. Идеально подходит для проектов, запускающих токены Taproot Assets в сети Bitcoin Lightning Network.
-
-**Основные функции:**
-- ✅ Проверка World ID для защиты от Sybil
-- ✅ Загрузка получателей пакетом (поддержка CSV)
-- ✅ Панель управления кампаниями для администраторов
-- ✅ Удобный интерфейс для претензий
-- ✅ Проверка приемлемости в реальном времени
-- ✅ Отслеживание истории транзакций
-- ✅ Киберпанк-тема пользовательского интерфейса
-- ✅ Интеграция экосистемы WorldApp
-
----
-
-## العربية
-
-### 🚀 LiMeiHua Taproot Airdrop في WorldApp
-
-منصة توزيع الهواء المتقدمة التي تستفيد من **التحقق من World ID** لمنع هجمات Sybil وضمان توزيع عادل للرموز. مثالية للمشاريع التي تطلق رموز Taproot Assets على شبكة Bitcoin Lightning Network.
-
-**الميزات الرئيسية:**
-- ✅ التحقق من World ID لحماية Sybil
-- ✅ تحميل المستقبلين على دفعات (دعم CSV)
-- ✅ لوحة تحكم إدارة الحملات للمسؤولين
-- ✅ واجهة سهلة الاستخدام للمطالبات
-- ✅ التحقق من الأهلية في الوقت الفعلي
-- ✅ تتبع سجل المعاملات
-- ✅ موضوع واجهة المستخدم السايبربانك
-- ✅ تكامل نظام WorldApp البيئي
-
----
-
-## हिन्दी
-
-### 🚀 LiMeiHua Taproot Airdrop in WorldApp
-
-एक अत्याधुनिक एयरड्रॉप वितरण प्लेटफॉर्म जो **World ID सत्यापन** का लाभ उठाता है ताकि Sybil हमलों को रोका जा सके और टोकन का निष्पक्ष वितरण सुनिश्चित किया जा सके। Bitcoin Lightning Network पर Taproot Assets टोकन लॉन्च करने वाली परियोजनाओं के लिए बिल्कुल सही।
-
-**मुख्य विशेषताएं:**
-- ✅ Sybil सुरक्षा के लिए World ID सत्यापन
-- ✅ बैच प्राप्तकर्ता अपलोड (CSV समर्थन)
-- ✅ प्रशासकों के लिए अभियान प्रबंधन डैशबोर्ड
-- ✅ दावों के लिए उपयोगकर्ता के अनुकूल इंटरफेस
-- ✅ रीयल-टाइम पात्रता जांच
-- ✅ लेनदेन इतिहास ट्रैकिंग
-- ✅ साइबरपंक UI थीम
-- ✅ WorldApp इकोसिस्टम एकीकरण
-
----
-
-## Tiếng Việt
-
-### 🚀 LiMeiHua Taproot Airdrop trong WorldApp
-
-Một nền tảng phân phối airdrop tiên tiến tận dụng **xác minh World ID** để ngăn chặn các cuộc tấn công Sybil và đảm bảo phân phối token công bằng. Hoàn hảo cho các dự án ra mắt token Taproot Assets trên Bitcoin Lightning Network.
-
-**Các tính năng chính:**
-- ✅ Xác minh World ID để bảo vệ Sybil
-- ✅ Tải lên người nhận theo lô (hỗ trợ CSV)
-- ✅ Bảng điều khiển quản lý chiến dịch cho quản trị viên
-- ✅ Giao diện thân thiện với người dùng để yêu cầu
-- ✅ Kiểm tra tính đủ điều kiện theo thời gian thực
-- ✅ Theo dõi lịch sử giao dịch
-- ✅ Chủ đề giao diện người dùng cyberpunk
-- ✅ Tích hợp hệ sinh thái WorldApp
-
----
-
-## Bahasa Indonesia
-
-### 🚀 LiMeiHua Taproot Airdrop di WorldApp
-
-Platform distribusi airdrop canggih yang memanfaatkan **verifikasi World ID** untuk mencegah serangan Sybil dan memastikan distribusi token yang adil. Sempurna untuk proyek yang meluncurkan token Taproot Assets di Bitcoin Lightning Network.
+### Bahasa Indonesia (Indonesian Documentation)
+**LiMeiHua Taproot Assets** adalah platform infrastruktur keuangan modern yang dirancang untuk mendukung aliran uang besar untuk Nenek LiMeiHua. Sistem komprehensif ini memungkinkan pengguna membuat, mengelola, dan memperdagangkan token Taproot Assets di Jaringan Bitcoin Lightning.
 
 **Fitur Utama:**
-- ✅ Verifikasi World ID untuk perlindungan Sybil
-- ✅ Unggah penerima batch (dukungan CSV)
-- ✅ Dasbor manajemen kampanye untuk admin
-- ✅ Antarmuka ramah pengguna untuk klaim
-- ✅ Pemeriksaan kelayakan waktu nyata
-- ✅ Pelacakan riwayat transaksi
-- ✅ Tema UI cyberpunk
-- ✅ Integrasi ekosistem WorldApp
+- Buat token Taproot Assets yang dapat disesuaikan
+- Kelola pasokan token (tetap, dapat dicetak, dapat dibakar)
+- Hitung biaya gas dan biaya transaksi
+- Kirim dan terima token di Jaringan Lightning
+- Dukungan multi-platform (Web, Mobile, Desktop)
+- Integrasi World ID untuk keamanan yang lebih baik
+- Sistem distribusi Airdrop
+- Integrasi Payment Gateway
+- Manajemen Lightning Node
 
 ---
 
-## Bahasa Melayu
+### Filipino (Filipino Documentation)
+**LiMeiHua Taproot Assets** ay isang modernong platform ng financial infrastructure na dinisenyo upang suportahan ang malaking daloy ng pera para sa LiMeiHua Grand Mother. Ang komprehensibong sistemang ito ay nagbibigay-daan sa mga user na lumikha, pamahalaan, at magbenta ng Taproot Assets tokens sa Bitcoin Lightning Network.
 
-### 🚀 LiMeiHua Taproot Airdrop dalam WorldApp
-
-Platform pengedaran airdrop canggih yang memanfaatkan **pengesahan World ID** untuk mencegah serangan Sybil dan memastikan pengedaran token yang adil. Sempurna untuk projek yang melancarkan token Taproot Assets di Bitcoin Lightning Network.
-
-**Ciri-ciri Utama:**
-- ✅ Pengesahan World ID untuk perlindungan Sybil
-- ✅ Muat naik penerima batch (sokongan CSV)
-- ✅ Papan pemuka pengurusan kempen untuk pentadbir
-- ✅ Antarmuka mesra pengguna untuk tuntutan
-- ✅ Pemeriksaan kelayakan masa nyata
-- ✅ Penjejakan riwayat transaksi
-- ✅ Tema UI cyberpunk
-- ✅ Integrasi ekosistem WorldApp
+**Pangunahing Mga Katangian:**
+- Lumikha ng mga customized Taproot Assets tokens
+- Pamahalaan ang supply ng token (fixed, mintable, burnable)
+- Kalkulahin ang gas fees at transaction costs
+- Magpadala at makatanggap ng tokens sa Lightning Network
+- Suporta sa maraming platform (Web, Mobile, Desktop)
+- Pagsasama ng World ID para sa mas magandang seguridad
+- Sistema ng Airdrop distribution
+- Pagsasama ng Payment Gateway
+- Pamamahala ng Lightning Node
 
 ---
 
-## Türkçe
+### தமிழ் (Tamil Documentation)
+**LiMeiHua Taproot Assets** என்பது LiMeiHua Grand Mother க்கான பெரிய பணப்புழக்கத்தை ஆதரிக்க வடிவமைக்கப்பட்ட ஒரு நவீன நிதி உள்கட்டமைப்பு தளம். இந்த விரிவான அமைப்பு பயனர்களை Taproot Assets டோக்கன்களை உருவாக்க, நிர்வகிக்க மற்றும் Bitcoin Lightning Network இல் வர்த்தகம் செய்ய அனுமதிக்கிறது.
 
-### 🚀 LiMeiHua Taproot Airdrop in WorldApp
+**முக்கிய அம்சங்கள்:**
+- தனிப்பயனாக்கப்பட்ட Taproot Assets டோக்கன்களை உருவாக்கவும்
+- டோக்கன் விநியோகத்தை நிர்வகிக்கவும் (நிலையான, மிண்டபல், எரியக்கூடிய)
+- வாயு கட்டணம் மற்றும் பரிவர்த்தனை செலவுகளைக் கணக்கிடவும்
+- Lightning Network இல் டோக்கன்களை அனுப்பி பெறவும்
+- பல-தளம் ஆதரவு (Web, Mobile, Desktop)
+- சிறந்த பாதுகாப்பிற்கான World ID ஒருங்கிணைப்பு
+- Airdrop விநியோக அமைப்பு
+- Payment Gateway ஒருங்கிணைப்பு
+- Lightning Node நிர்வாகம்
 
-**World ID doğrulaması** yararlanarak Sybil saldırılarını önleyen ve adil token dağıtımını sağlayan son teknoloji bir airdrop dağıtım platformu. Bitcoin Lightning Network'te Taproot Assets tokenları başlatan projeler için mükemmeldir.
+---
+
+### Русский (Russian Documentation)
+**LiMeiHua Taproot Assets** - это современная платформа финансовой инфраструктуры, разработанная для поддержки огромного потока денежных средств для бабушки LiMeiHua. Эта комплексная система позволяет пользователям создавать, управлять и торговать токенами Taproot Assets в сети Bitcoin Lightning Network.
+
+**Основные возможности:**
+- Создание пользовательских токенов Taproot Assets
+- Управление предложением токенов (фиксированное, чеканка, сжигание)
+- Расчет комиссий за газ и стоимости транзакций
+- Отправка и получение токенов в сети Lightning Network
+- Поддержка нескольких платформ (Web, Mobile, Desktop)
+- Интеграция World ID для повышенной безопасности
+- Система распределения Airdrop
+- Интеграция Payment Gateway
+- Управление узлом Lightning
+
+---
+
+### हिन्दी (Hindi Documentation)
+**LiMeiHua Taproot Assets** एक आधुनिक वित्तीय बुनियादी ढांचा मंच है जो LiMeiHua Grand Mother के लिए भारी मात्रा में धन प्रवाह का समर्थन करने के लिए डिज़ाइन किया गया है। यह व्यापक प्रणाली उपयोगकर्ताओं को Taproot Assets टोकन बनाने, प्रबंधित करने और Bitcoin Lightning Network पर व्यापार करने की अनुमति देती है।
+
+**मुख्य विशेषताएं:**
+- कस्टमाइज़्ड Taproot Assets टोकन बनाएं
+- टोकन आपूर्ति प्रबंधित करें (निश्चित, मिंटेबल, बर्नेबल)
+- गैस शुल्क और लेनदेन लागत की गणना करें
+- Lightning Network पर टोकन भेजें और प्राप्त करें
+- मल्टी-प्लेटफॉर्म समर्थन (Web, Mobile, Desktop)
+- बेहतर सुरक्षा के लिए World ID एकीकरण
+- Airdrop वितरण प्रणाली
+- Payment Gateway एकीकरण
+- Lightning Node प्रबंधन
+
+---
+
+### 中文 (Chinese Simplified Documentation)
+**LiMeiHua Taproot Assets** 是一个现代金融基础设施平台，旨在为李美华奶奶支持大规模资金流动。这个综合系统使用户能够在比特币闪电网络上创建、管理和交易 Taproot Assets 代币。
+
+**主要功能：**
+- 创建自定义 Taproot Assets 代币
+- 管理代币供应（固定、可铸造、可销毁）
+- 计算燃气费和交易成本
+- 在闪电网络上发送和接收代币
+- 多平台支持（Web、Mobile、Desktop）
+- World ID 集成以增强安全性
+- Airdrop 分发系统
+- Payment Gateway 集成
+- Lightning Node 管理
+
+---
+
+### 日本語 (Japanese Documentation)
+**LiMeiHua Taproot Assets** は、李美華おばあちゃんのための大規模な資金流を支援するために設計された最新の金融インフラストラクチャプラットフォームです。この包括的なシステムにより、ユーザーはビットコインライトニングネットワーク上で Taproot Assets トークンを作成、管理、および取引できます。
+
+**主な機能：**
+- カスタマイズされた Taproot Assets トークンを作成
+- トークン供給を管理（固定、ミント可能、バーン可能）
+- ガス代と取引コストを計算
+- ライトニングネットワークでトークンを送受信
+- マルチプラットフォーム対応（Web、Mobile、Desktop）
+- セキュリティ強化のための World ID 統合
+- Airdrop 配布システム
+- Payment Gateway 統合
+- Lightning Node 管理
+
+---
+
+### 한국어 (Korean Documentation)
+**LiMeiHua Taproot Assets** 는 이미화 할머니를 위한 대규모 자금 흐름을 지원하기 위해 설계된 현대적 금융 인프라 플랫폼입니다. 이 포괄적인 시스템을 통해 사용자는 비트코인 라이트닝 네트워크에서 Taproot Assets 토큰을 생성, 관리 및 거래할 수 있습니다.
+
+**주요 기능:**
+- 맞춤형 Taproot Assets 토큰 생성
+- 토큰 공급 관리 (고정, 발행 가능, 소각 가능)
+- 가스 수수료 및 거래 비용 계산
+- 라이트닝 네트워크에서 토큰 송수신
+- 다중 플랫폼 지원 (Web, Mobile, Desktop)
+- 향상된 보안을 위한 World ID 통합
+- Airdrop 배포 시스템
+- Payment Gateway 통합
+- Lightning Node 관리
+
+---
+
+### Español (Spanish Documentation)
+**LiMeiHua Taproot Assets** es una plataforma moderna de infraestructura financiera diseñada para apoyar el flujo masivo de dinero para la abuela LiMeiHua. Este sistema integral permite a los usuarios crear, gestionar e intercambiar tokens Taproot Assets en la red Bitcoin Lightning Network.
+
+**Características principales:**
+- Crear tokens Taproot Assets personalizados
+- Gestionar el suministro de tokens (fijo, acuñable, quemable)
+- Calcular tarifas de gas y costos de transacción
+- Enviar y recibir tokens en Lightning Network
+- Soporte multiplataforma (Web, Mobile, Desktop)
+- Integración de World ID para mayor seguridad
+- Sistema de distribución de Airdrop
+- Integración de Payment Gateway
+- Gestión de Lightning Node
+
+---
+
+### Français (French Documentation)
+**LiMeiHua Taproot Assets** est une plateforme d'infrastructure financière moderne conçue pour soutenir le flux massif d'argent pour la grand-mère LiMeiHua. Ce système complet permet aux utilisateurs de créer, gérer et échanger des jetons Taproot Assets sur le réseau Bitcoin Lightning Network.
+
+**Caractéristiques principales:**
+- Créer des jetons Taproot Assets personnalisés
+- Gérer l'approvisionnement en jetons (fixe, frappable, brûlable)
+- Calculer les frais de gaz et les coûts de transaction
+- Envoyer et recevoir des jetons sur Lightning Network
+- Support multi-plateforme (Web, Mobile, Desktop)
+- Intégration de World ID pour une sécurité renforcée
+- Système de distribution d'Airdrop
+- Intégration de Payment Gateway
+- Gestion des nœuds Lightning
+
+---
+
+### Deutsch (German Documentation)
+**LiMeiHua Taproot Assets** ist eine moderne Finanzinfrastruktur-Plattform, die entwickelt wurde, um den massiven Geldfluss für Großmutter LiMeiHua zu unterstützen. Dieses umfassende System ermöglicht es Benutzern, Taproot Assets-Token im Bitcoin Lightning Network zu erstellen, zu verwalten und zu handeln.
+
+**Hauptmerkmale:**
+- Erstellen Sie benutzerdefinierte Taproot Assets-Token
+- Verwalten Sie das Token-Angebot (fest, prägbar, verbrennbar)
+- Berechnen Sie Gasgebühren und Transaktionskosten
+- Senden und empfangen Sie Token im Lightning Network
+- Multi-Plattform-Unterstützung (Web, Mobile, Desktop)
+- World ID-Integration für erhöhte Sicherheit
+- Airdrop-Verteilungssystem
+- Payment Gateway-Integration
+- Lightning Node-Verwaltung
+
+---
+
+### Português (Portuguese Documentation)
+**LiMeiHua Taproot Assets** é uma plataforma de infraestrutura financeira moderna projetada para suportar o fluxo massivo de dinheiro para a avó LiMeiHua. Este sistema abrangente permite que os usuários criem, gerenciem e negociem tokens Taproot Assets na rede Bitcoin Lightning Network.
+
+**Principais recursos:**
+- Criar tokens Taproot Assets personalizados
+- Gerenciar oferta de tokens (fixo, cunhável, queimável)
+- Calcular taxas de gás e custos de transação
+- Enviar e receber tokens na Lightning Network
+- Suporte multiplataforma (Web, Mobile, Desktop)
+- Integração de World ID para segurança aprimorada
+- Sistema de distribuição de Airdrop
+- Integração de Payment Gateway
+- Gerenciamento de Lightning Node
+
+---
+
+### العربية (Arabic Documentation)
+**LiMeiHua Taproot Assets** هي منصة بنية تحتية مالية حديثة مصممة لدعم تدفق أموال ضخم لجدة LiMeiHua. يسمح هذا النظام الشامل للمستخدمين بإنشاء وإدارة وتداول رموز Taproot Assets على شبكة Bitcoin Lightning Network.
+
+**المميزات الرئيسية:**
+- إنشاء رموز Taproot Assets مخصصة
+- إدارة عرض الرموز (ثابت، قابل للسك، قابل للحرق)
+- حساب رسوم الغاز وتكاليف المعاملات
+- إرسال واستقبال الرموز على Lightning Network
+- دعم متعدد المنصات (Web, Mobile, Desktop)
+- تكامل World ID لأمان محسّن
+- نظام توزيع Airdrop
+- تكامل Payment Gateway
+- إدارة عقدة Lightning
+
+---
+
+### Türkçe (Turkish Documentation)
+**LiMeiHua Taproot Assets**, LiMeiHua Büyükanne için büyük para akışını desteklemek üzere tasarlanmış modern bir finansal altyapı platformudur. Bu kapsamlı sistem, kullanıcıların Bitcoin Lightning Network üzerinde Taproot Assets jetonları oluşturmasına, yönetmesine ve ticaretini yapmasına olanak tanır.
 
 **Ana Özellikler:**
-- ✅ Sybil koruması için World ID doğrulaması
-- ✅ Toplu alıcı yüklemesi (CSV desteği)
-- ✅ Yöneticiler için kampanya yönetimi panosu
-- ✅ Talepler için kullanıcı dostu arayüz
-- ✅ Gerçek zamanlı uygunluk kontrolü
-- ✅ İşlem geçmişi takibi
-- ✅ Cyberpunk UI teması
-- ✅ WorldApp ekosistem entegrasyonu
+- Özelleştirilmiş Taproot Assets jetonları oluşturun
+- Jeton arzını yönetin (sabit, basılabilir, yakılabilir)
+- Gaz ücretleri ve işlem maliyetlerini hesaplayın
+- Lightning Network üzerinde jetonları gönderin ve alın
+- Çok platformlu destek (Web, Mobile, Desktop)
+- Geliştirilmiş güvenlik için World ID entegrasyonu
+- Airdrop dağıtım sistemi
+- Payment Gateway entegrasyonu
+- Lightning Node yönetimi
 
 ---
 
-## Italiano
+### Italiano (Italian Documentation)
+**LiMeiHua Taproot Assets** è una piattaforma di infrastruttura finanziaria moderna progettata per supportare il massiccio flusso di denaro per la nonna LiMeiHua. Questo sistema completo consente agli utenti di creare, gestire e scambiare token Taproot Assets sulla rete Bitcoin Lightning Network.
 
-### 🚀 LiMeiHua Taproot Airdrop in WorldApp
-
-Una piattaforma di distribuzione di airdrop all'avanguardia che sfrutta la **verifica World ID** per prevenire gli attacchi Sybil e garantire una distribuzione equa dei token. Perfetto per i progetti che lanciano token Taproot Assets su Bitcoin Lightning Network.
-
-**Caratteristiche Principali:**
-- ✅ Verifica World ID per la protezione Sybil
-- ✅ Caricamento batch dei destinatari (supporto CSV)
-- ✅ Dashboard di gestione delle campagne per gli amministratori
-- ✅ Interfaccia facile da usare per i reclami
-- ✅ Verifica dell'idoneità in tempo reale
-- ✅ Tracciamento della cronologia delle transazioni
-- ✅ Tema dell'interfaccia utente cyberpunk
-- ✅ Integrazione dell'ecosistema WorldApp
+**Caratteristiche principali:**
+- Crea token Taproot Assets personalizzati
+- Gestisci l'offerta di token (fisso, coniabile, bruciabile)
+- Calcola le commissioni del gas e i costi delle transazioni
+- Invia e ricevi token su Lightning Network
+- Supporto multipiattaforma (Web, Mobile, Desktop)
+- Integrazione di World ID per una sicurezza migliorata
+- Sistema di distribuzione Airdrop
+- Integrazione di Payment Gateway
+- Gestione dei nodi Lightning
 
 ---
 
-## Nederlands
+### Nederlands (Dutch Documentation)
+**LiMeiHua Taproot Assets** is een modern financieel infrastructuurplatform dat is ontworpen ter ondersteuning van de massale geldstroom voor oma LiMeiHua. Dit uitgebreide systeem stelt gebruikers in staat Taproot Assets-tokens op het Bitcoin Lightning Network te creëren, beheren en verhandelen.
 
-### 🚀 LiMeiHua Taproot Airdrop in WorldApp
-
-Een geavanceerd airdrop-distributieplatform dat **World ID-verificatie** benut om Sybil-aanvallen te voorkomen en eerlijke tokendistributie te garanderen. Perfect voor projecten die Taproot Assets-tokens op Bitcoin Lightning Network lanceren.
-
-**Hoofdfuncties:**
-- ✅ World ID-verificatie voor Sybil-bescherming
-- ✅ Batch-upload van ontvangers (CSV-ondersteuning)
-- ✅ Campagnebeheer-dashboard voor beheerders
-- ✅ Gebruiksvriendelijke interface voor vorderingen
-- ✅ Geschiktheidscontrole in realtime
-- ✅ Transactiegeschiedenis bijhouden
-- ✅ Cyberpunk UI-thema
-- ✅ WorldApp-ecosysteem integratie
+**Hoofdkenmerken:**
+- Maak aangepaste Taproot Assets-tokens
+- Beheer tokenvoorraad (vast, mintable, brandbaar)
+- Bereken gaskosten en transactiekosten
+- Verzend en ontvang tokens op Lightning Network
+- Ondersteuning voor meerdere platforms (Web, Mobile, Desktop)
+- World ID-integratie voor verbeterde beveiliging
+- Airdrop-distributiesysteem
+- Payment Gateway-integratie
+- Lightning Node-beheer
 
 ---
 
-## Polski
+### Polski (Polish Documentation)
+**LiMeiHua Taproot Assets** to nowoczesna platforma infrastruktury finansowej zaprojektowana do wspierania masywnego przepływu pieniędzy dla babci LiMeiHua. Ten kompleksowy system umożliwia użytkownikom tworzenie, zarządzanie i handel tokenami Taproot Assets w sieci Bitcoin Lightning Network.
 
-### 🚀 LiMeiHua Taproot Airdrop w WorldApp
-
-Zaawansowana platforma dystrybucji airdropów, która wykorzystuje **weryfikację World ID** do zapobiegania atakom Sybil i zapewnienia uczciwej dystrybucji tokenów. Idealna dla projektów uruchamiających tokeny Taproot Assets w sieci Bitcoin Lightning Network.
-
-**Główne Funkcje:**
-- ✅ Weryfikacja World ID dla ochrony Sybil
-- ✅ Przesyłanie odbiorców w partiach (obsługa CSV)
-- ✅ Pulpit zarządzania kampanią dla administratorów
-- ✅ Przyjazny dla użytkownika interfejs do roszczeń
-- ✅ Sprawdzanie uprawnień w czasie rzeczywistym
-- ✅ Śledzenie historii transakcji
-- ✅ Motyw interfejsu cyberpunk
-- ✅ Integracja ekosystemu WorldApp
+**Główne cechy:**
+- Twórz dostosowane tokeny Taproot Assets
+- Zarządzaj podażą tokenów (stała, możliwa do wybicia, możliwa do spalenia)
+- Oblicz opłaty za gaz i koszty transakcji
+- Wysyłaj i odbieraj tokeny w sieci Lightning Network
+- Obsługa wielu platform (Web, Mobile, Desktop)
+- Integracja World ID w celu zwiększonego bezpieczeństwa
+- System dystrybucji Airdrop
+- Integracja Payment Gateway
+- Zarządzanie węzłem Lightning
 
 ---
 
-## Svenska
-
-### 🚀 LiMeiHua Taproot Airdrop i WorldApp
-
-En avancerad airdrop-distributionsplattform som utnyttjar **World ID-verifiering** för att förhindra Sybil-attacker och säkerställa rättvis tokendistribution. Perfekt för projekt som lanserar Taproot Assets-tokens på Bitcoin Lightning Network.
+### Svenska (Swedish Documentation)
+**LiMeiHua Taproot Assets** är en modern finansiell infrastrukturplattform utformad för att stödja massiv penningflöde för mormor LiMeiHua. Detta omfattande system gör det möjligt för användare att skapa, hantera och handla Taproot Assets-tokens på Bitcoin Lightning Network.
 
 **Huvudfunktioner:**
-- ✅ World ID-verifiering för Sybil-skydd
-- ✅ Batch-uppladdning av mottagare (CSV-stöd)
-- ✅ Kampanjhanteringspanel för administratörer
-- ✅ Användarvänligt gränssnitt för anspråk
-- ✅ Behörighetskontroll i realtid
-- ✅ Spårning av transaktionshistorik
-- ✅ Cyberpunk UI-tema
-- ✅ WorldApp-ekosystemintegration
+- Skapa anpassade Taproot Assets-tokens
+- Hantera tokenutbud (fast, präglingsbar, bränbar)
+- Beräkna gasavgifter och transaktionskostnader
+- Skicka och ta emot tokens på Lightning Network
+- Stöd för flera plattformar (Web, Mobile, Desktop)
+- World ID-integration för förbättrad säkerhet
+- Airdrop-distributionssystem
+- Payment Gateway-integration
+- Lightning Node-hantering
 
 ---
 
-## Українська
-
-### 🚀 LiMeiHua Taproot Airdrop у WorldApp
-
-Передова платформа розповсюдження повітряних капель, яка використовує **верифікацію World ID** для запобігання атакам Sybil та забезпечення справедливого розподілу токенів. Ідеально підходить для проектів, які запускають токени Taproot Assets у мережі Bitcoin Lightning Network.
+### Українська (Ukrainian Documentation)
+**LiMeiHua Taproot Assets** - це сучасна платформа фінансової інфраструктури, розроблена для підтримки масивного потоку грошей для бабусі LiMeiHua. Ця комплексна система дозволяє користувачам створювати, керувати та торгувати токенами Taproot Assets у мережі Bitcoin Lightning Network.
 
 **Основні функції:**
-- ✅ Верифікація World ID для захисту від Sybil
-- ✅ Пакетне завантаження одержувачів (підтримка CSV)
-- ✅ Панель управління кампаніями для адміністраторів
-- ✅ Зручний інтерфейс для претензій
-- ✅ Перевірка прав у реальному часі
-- ✅ Відстеження історії транзакцій
-- ✅ Тема кіберпанку UI
-- ✅ Інтеграція екосистеми WorldApp
+- Створюйте спеціалізовані токени Taproot Assets
+- Керуйте пропозицією токенів (фіксована, карбована, спалювана)
+- Обчислюйте комісії за газ та вартість транзакцій
+- Надсилайте та отримуйте токени в мережі Lightning Network
+- Підтримка кількох платформ (Web, Mobile, Desktop)
+- Інтеграція World ID для посиленої безпеки
+- Система розповсюдження Airdrop
+- Інтеграція Payment Gateway
+- Управління вузлом Lightning
 
 ---
 
-## Čeština
-
-### 🚀 LiMeiHua Taproot Airdrop v WorldApp
-
-Pokročilá platforma pro distribuci airdropů, která využívá **ověření World ID** k prevenci útoků Sybil a zajištění spravedlivé distribuce tokenů. Ideální pro projekty spouštějící tokeny Taproot Assets v síti Bitcoin Lightning Network.
+### Čeština (Czech Documentation)
+**LiMeiHua Taproot Assets** je moderní platforma finanční infrastruktury navržená tak, aby podporovala masivní tok peněz pro babičku LiMeiHua. Tento komplexní systém umožňuje uživatelům vytvářet, spravovat a obchodovat s tokeny Taproot Assets v síti Bitcoin Lightning Network.
 
 **Hlavní funkce:**
-- ✅ Ověření World ID pro ochranu Sybil
-- ✅ Hromadné nahrávání příjemců (podpora CSV)
-- ✅ Řídicí panel správy kampaní pro správce
-- ✅ Uživatelsky přívětivé rozhraní pro nároky
-- ✅ Kontrola oprávnění v reálném čase
-- ✅ Sledování historie transakcí
-- ✅ Motiv cyberpunk UI
-- ✅ Integrace ekosystému WorldApp
+- Vytvářejte přizpůsobené tokeny Taproot Assets
+- Spravujte nabídku tokenů (pevná, razitelná, spalitelná)
+- Vypočítejte poplatky za plyn a náklady na transakce
+- Odesílajte a přijímejte tokeny v síti Lightning Network
+- Podpora více platforem (Web, Mobile, Desktop)
+- Integrace World ID pro zvýšenou bezpečnost
+- Systém distribuce Airdrop
+- Integrace Payment Gateway
+- Správa uzlu Lightning
 
 ---
 
-## Română
-
-### 🚀 LiMeiHua Taproot Airdrop în WorldApp
-
-O platformă avansată de distribuție a airdropurilor care utilizează **verificarea World ID** pentru a preveni atacurile Sybil și a asigura o distribuție echitabilă a tokenurilor. Perfectă pentru proiectele care lansează tokenuri Taproot Assets pe Bitcoin Lightning Network.
+### Română (Romanian Documentation)
+**LiMeiHua Taproot Assets** este o platformă modernă de infrastructură financiară concepută pentru a sprijini fluxul masiv de bani pentru bunica LiMeiHua. Acest sistem cuprinzător permite utilizatorilor să creeze, să gestioneze și să tranzacționeze jetoane Taproot Assets pe rețeaua Bitcoin Lightning Network.
 
 **Caracteristici principale:**
-- ✅ Verificare World ID pentru protecție Sybil
-- ✅ Încărcare în lot de destinatari (suport CSV)
-- ✅ Tablou de bord de gestionare a campaniei pentru administratori
-- ✅ Interfață ușor de utilizat pentru revendicări
-- ✅ Verificarea eligibilității în timp real
-- ✅ Urmărirea istoricului tranzacțiilor
-- ✅ Temă UI cyberpunk
-- ✅ Integrare ecosistem WorldApp
+- Creați jetoane Taproot Assets personalizate
+- Gestionați oferta de jetoane (fix, mintabil, ardibil)
+- Calculați taxele de gaz și costurile tranzacțiilor
+- Trimiteți și primiți jetoane pe Lightning Network
+- Suport multi-platformă (Web, Mobile, Desktop)
+- Integrare World ID pentru securitate îmbunătățită
+- Sistem de distribuție Airdrop
+- Integrare Payment Gateway
+- Gestionarea nodului Lightning
 
 ---
 
-## Ελληνικά
-
-### 🚀 LiMeiHua Taproot Airdrop στο WorldApp
-
-Μια προηγμένη πλατφόρμα διανομής airdrop που αξιοποιεί την **επαλήθευση World ID** για την πρόληψη επιθέσεων Sybil και τη διασφάλιση δίκαιης διανομής token. Ιδανική για έργα που εκτοξεύουν token Taproot Assets στο δίκτυο Bitcoin Lightning Network.
+### Ελληνικά (Greek Documentation)
+**LiMeiHua Taproot Assets** είναι μια σύγχρονη πλατφόρμα χρηματοοικονομικής υποδομής σχεδιασμένη για να υποστηρίξει τη μαζική ροή χρημάτων για τη γιαγιά LiMeiHua. Αυτό το ολοκληρωμένο σύστημα επιτρέπει στους χρήστες να δημιουργούν, να διαχειρίζονται και να διαπραγματεύονται tokens Taproot Assets στο δίκτυο Bitcoin Lightning Network.
 
 **Κύρια χαρακτηριστικά:**
-- ✅ Επαλήθευση World ID για προστασία Sybil
-- ✅ Μαζική μεταφόρτωση παραλήπτων (υποστήριξη CSV)
-- ✅ Πίνακας ελέγχου διαχείρισης εκστρατείας για διαχειριστές
-- ✅ Φιλικό προς το χρήστη περιβάλλον για αξιώσεις
-- ✅ Έλεγχος επιλεξιμότητας σε πραγματικό χρόνο
-- ✅ Παρακολούθηση ιστορικού συναλλαγών
-- ✅ Θέμα UI cyberpunk
-- ✅ Ενσωμάτωση οικοσυστήματος WorldApp
+- Δημιουργήστε προσαρμοσμένα tokens Taproot Assets
+- Διαχειριστείτε την προσφορά tokens (σταθερή, κόπιμη, καύσιμη)
+- Υπολογίστε τα τέλη αερίου και τα κόστη συναλλαγών
+- Στείλτε και λάβετε tokens στο Lightning Network
+- Υποστήριξη πολλαπλών πλατφορμών (Web, Mobile, Desktop)
+- Ενσωμάτωση World ID για ενισχυμένη ασφάλεια
+- Σύστημα διανομής Airdrop
+- Ενσωμάτωση Payment Gateway
+- Διαχείριση κόμβου Lightning
 
 ---
 
-## עברית
+### עברית (Hebrew Documentation)
+**LiMeiHua Taproot Assets** היא פלטפורמת תשתית פיננסית מודרנית שתוכננה לתמוך בזרימת כספים거대ית לסבתא LiMeiHua. מערכת זו המקיפה מאפשרת למשתמשים ליצור, לנהל ולסחור בטוקנים של Taproot Assets ברשת Bitcoin Lightning Network.
 
-### 🚀 LiMeiHua Taproot Airdrop ב-WorldApp
-
-פלטפורמת חלוקת airdrop מתקדמת המנצלת **אימות World ID** כדי למנוע התקפות Sybil ולהבטיח חלוקה הוגנת של אסימונים. מושלמת לפרויקטים המשיקים אסימוני Taproot Assets ברשת Bitcoin Lightning Network.
-
-**תכונות ראשיות:**
-- ✅ אימות World ID להגנה מפני Sybil
-- ✅ העלאה בקבוצות של נמענים (תמיכה CSV)
-- ✅ לוח בקרה לניהול קמפיין עבור מנהלים
-- ✅ ממשק ידידותי למשתמש לתביעות
-- ✅ בדיקת הכשרות בזמן אמת
-- ✅ מעקב אחר היסטוריית עסקאות
-- ✅ ערכת נושא UI cyberpunk
-- ✅ אינטגרציה של אקוסיסטם WorldApp
+**תכונות עיקריות:**
+- יצירת טוקנים מותאמים של Taproot Assets
+- ניהול היצע של טוקנים (קבוע, שניתן לטבוע, שניתן לשרוף)
+- חישוב דמי גז וביצוע עלויות עסקה
+- שליחה וקבלת טוקנים ברשת Lightning Network
+- תמיכה בפלטפורמות מרובות (Web, Mobile, Desktop)
+- שילוב World ID לאבטחה משופרת
+- מערכת הפצה של Airdrop
+- שילוב Payment Gateway
+- ניהול צומת Lightning
 
 ---
 
-## বাংলা
-
-### 🚀 LiMeiHua Taproot Airdrop in WorldApp
-
-একটি অত্যাধুনিক এয়ারড্রপ বিতরণ প্ল্যাটফর্ম যা **World ID যাচাইকরণ** ব্যবহার করে Sybil আক্রমণ প্রতিরোধ করে এবং ন্যায্য টোকেন বিতরণ নিশ্চিত করে। Bitcoin Lightning Network-এ Taproot Assets টোকেন চালু করার প্রকল্পগুলির জন্য নিখুঁত।
+### বাংলা (Bengali Documentation)
+**LiMeiHua Taproot Assets** একটি আধুনিক আর্থিক অবকাঠামো প্ল্যাটফর্ম যা লীমেইহুয়া দাদির জন্য বিশাল অর্থ প্রবাহ সমর্থন করার জন্য ডিজাইন করা হয়েছে। এই ব্যাপক সিস্টেম ব্যবহারকারীদের বিটকয়েন লাইটনিং নেটওয়ার্কে ট্যাপরুট অ্যাসেট টোকেন তৈরি, পরিচালনা এবং বাণিজ্য করতে সক্ষম করে।
 
 **প্রধান বৈশিষ্ট্য:**
-- ✅ Sybil সুরক্ষার জন্য World ID যাচাইকরণ
-- ✅ ব্যাচ প্রাপক আপলোড (CSV সমর্থন)
-- ✅ প্রশাসকদের জন্য ক্যাম্পেইন ম্যানেজমেন্ট ড্যাশবোর্ড
-- ✅ দাবির জন্য ব্যবহারকারী-বান্ধব ইন্টারফেস
-- ✅ রিয়েল-টাইম যোগ্যতা পরীক্ষা
-- ✅ লেনদেনের ইতিহাস ট্র্যাকিং
-- ✅ সাইবারপাংক UI থিম
-- ✅ WorldApp ইকোসিস্টেম ইন্টিগ্রেশন
+- কাস্টমাইজড ট্যাপরুট অ্যাসেট টোকেন তৈরি করুন
+- টোকেন সরবরাহ পরিচালনা করুন (স্থির, মিন্টেবল, বার্নেবল)
+- গ্যাস ফি এবং লেনদেন খরচ গণনা করুন
+- লাইটনিং নেটওয়ার্কে টোকেন পাঠান এবং গ্রহণ করুন
+- মাল্টি-প্ল্যাটফর্ম সমর্থন (Web, Mobile, Desktop)
+- উন্নত নিরাপত্তার জন্য World ID ইন্টিগ্রেশন
+- এয়ারড্রপ বিতরণ সিস্টেম
+- পেমেন্ট গেটওয়ে ইন্টিগ্রেশন
+- লাইটনিং নোড ম্যানেজমেন্ট
 
 ---
 
-## Filipino
+### Kiswahili (Swahili Documentation)
+**LiMeiHua Taproot Assets** ni jukwaa la miundombinu ya fedha ya kisasa iliyoundwa kusaidia mtiririko mkubwa wa pesa kwa Nyanya LiMeiHua. Mfumo huu wa kina unaweza kuwezesha watumiaji kuunda, kudhibiti, na kuokolea tokens za Taproot Assets kwenye mtandao wa Bitcoin Lightning Network.
 
-### 🚀 LiMeiHua Taproot Airdrop sa WorldApp
-
-Isang advanced na airdrop distribution platform na gumagamit ng **World ID verification** upang maiwasan ang Sybil attacks at masiguro ang patas na token distribution. Perpekto para sa mga proyektong naglalabas ng Taproot Assets tokens sa Bitcoin Lightning Network.
-
-**Mga Pangunahing Tampok:**
-- ✅ World ID verification para sa Sybil protection
-- ✅ Batch recipient upload (CSV support)
-- ✅ Campaign management dashboard para sa admins
-- ✅ User-friendly interface para sa claims
-- ✅ Real-time eligibility checking
-- ✅ Transaction history tracking
-- ✅ Cyberpunk UI theme
-- ✅ WorldApp ecosystem integration
+**Sifa kuu:**
+- Kuunda tokens za Taproot Assets zilizobadilishwa
+- Kudhibiti usambazaji wa tokens (imara, inayoweza kusambazwa, inayoweza kuchoma)
+- Kuhesabu ada za gesi na gharama za miamala
+- Kutuma na kupokea tokens kwenye Lightning Network
+- Usaidizi wa jukwaa nyingi (Web, Mobile, Desktop)
+- Ujumuishaji wa World ID kwa usalama ulioboreswa
+- Mfumo wa usambazaji wa Airdrop
+- Ujumuishaji wa Payment Gateway
+- Usimamizi wa nodi ya Lightning
 
 ---
 
-## Kiswahili
+## 🎯 Project Overview
 
-### 🚀 LiMeiHua Taproot Airdrop katika WorldApp
+This comprehensive project suite provides complete solutions for:
 
-Jukwaa la usambazaji wa airdrop la hali ya juu linalotumiauthibitisho wa World ID** ili kuzuia shambuzi za Sybil na kuhakikisha usambazaji wa token unaofanana. Bora kwa miradi inayotoa tokens ya Taproot Assets kwenye Bitcoin Lightning Network.
-
-**Sifa za Msingi:**
-- ✅ Uthibitisho wa World ID kwa ulinzi wa Sybil
-- ✅ Upakiaji wa walengwa kwa batch (msaada wa CSV)
-- ✅ Dashibodi ya usimamizi wa kampeni kwa waongozaji
-- ✅ Kiolesura kinachofaa kwa watumiaji kwa madai
-- ✅ Ukaguzi wa uhalifu katika wakati halisi
-- ✅ Ufuataji wa historia ya miamala
-- ✅ Mandhari ya UI ya cyberpunk
-- ✅ Ujumuishaji wa mazingira ya WorldApp
+1. **Token Creation & Management** - Create and manage Taproot Assets tokens
+2. **Payment Processing** - Accept payments in BTC, USDT, and custom tokens
+3. **Airdrop Distribution** - Distribute tokens to multiple recipients
+4. **Wallet Solutions** - Multi-platform wallet support
+5. **Bridge Services** - Connect ERC-20 and Taproot Assets
+6. **Node Management** - Operate Lightning Network nodes
 
 ---
 
-## 🔒 Security & Privacy
+## ✨ Features
 
-- **World ID Verified**: Cryptographic proof of personhood
-- **Sybil Protection**: One person = one claim
-- **Batch Processing**: Efficient large-scale distribution
-- **Immutable Records**: All claims permanently recorded
-- **Rate Limiting**: Prevent abuse and spam
-- **Input Validation**: Comprehensive data validation
-
-## 📞 Support & Community
-
-- 📧 Email: support@limeihua-airdrop.com
-- 🐛 GitHub Issues: [Report a bug](https://github.com/kanutsanan1988/LiMeiHua-Taproot-Airdrop-in-WorldApp/issues)
-- 💬 Discord: [Join community](https://discord.gg/limeihua)
-- 🌐 Website: https://limeihua-airdrop.com
-
-## 📄 License
-
-MIT License - See LICENSE file for details
-
-## 👏 Dedication
-
-This software is dedicated to **LiMeiHua Grand Mother (ท่านผู้เฒ่าหลี่เหมยฮัว)** as a modern financial infrastructure to support massive money flow.
-
-Created by **Mr. Kanutsanan Pongpanna (นายคณัสนันท์ พงษ์พันนา)**
-
-🔗 [Visit Creator's GPT](https://chatgpt.com/g/g-68d289535dec81919445deb9830f2d8e-kanutsanan-pongpanna)
+- ✅ 40+ Language Support
+- ✅ Multi-Platform (Web, Mobile, Desktop)
+- ✅ Lightning Network Integration
+- ✅ World ID Verification
+- ✅ Taproot Assets Protocol
+- ✅ Payment Gateway
+- ✅ Airdrop System
+- ✅ Node Management
+- ✅ Bridge Services
+- ✅ Real-time Updates
 
 ---
 
-**Happy Airdrop Distribution with World ID! 🎁🌍💰**
+## 🚀 Getting Started
+
+1. Choose your preferred platform (Web, Mobile, or Desktop)
+2. Connect your Lightning Network wallet
+3. Create your first Taproot Assets token
+4. Start managing your digital assets
+5. Explore advanced features like airdrops and payment processing
+
+---
+
+## 💡 Use Cases
+
+- Token creation for projects
+- Payment processing for e-commerce
+- Airdrop campaigns
+- Wallet management
+- Cross-chain token bridging
+- Lightning Network node operation
+
+---
+
+## 🔧 Technical Stack
+
+- **Frontend:** React, Next.js, React Native, Electron
+- **Backend:** Node.js, Express, tRPC
+- **Smart Contracts:** Solidity
+- **Database:** MySQL/TiDB
+- **Authentication:** Manus OAuth, World ID
+- **API:** Taproot Assets Protocol, Lightning Labs
+
+---
+
+## 📊 Language Statistics
+
+| Region | Count | Languages |
+|--------|-------|-----------|
+| ASEAN | 9 | Thai, Lao, Burmese, Vietnamese, Khmer, Malay, Indonesian, Filipino, Tamil |
+| Other | 5 | Russian, Mongolian, Sinhala, Dzongkha, Nepali |
+| India | 21 | Hindi, Bengali, Telugu, Marathi, Tamil, Urdu, Gujarati, Kannada, Malayalam, Odia, Punjabi, Assamese, Maithili, Santali, Kashmiri, Nepali, Sindhi, Dogri, Manipuri, Bodo, Konkani |
+| Global | 20+ | English, Chinese, Japanese, Korean, Spanish, French, German, Portuguese, Arabic, Turkish, Italian, Dutch, Polish, Swedish, Ukrainian, Czech, Romanian, Greek, Hebrew, Swahili |
+| **TOTAL** | **40+** | **All languages listed above** |
+
+---
+
+## 🌐 Language Features
+
+✅ **Auto-Detection:** Automatically detects user's browser language
+✅ **40+ Languages:** Comprehensive language support
+✅ **Easy Switching:** Manual language selection available
+✅ **Persistent:** Language preference saved locally
+✅ **Fallback:** English fallback for all languages
+✅ **Full Documentation:** Complete documentation in all languages
+
+---
+
+**Dedicated to LiMeiHua Grand Mother (ท่านผู้เฒ่าหลี่เหมยฮัว)**
+
+Created by Mr. Kanutsanan Pongpanna (นายคณัสนันท์ พงษ์พันนา)
+
+URL: https://chatgpt.com/g/g-68d289535dec81919445deb9830f2d8e-kanutsanan-pongpanna
+
+---
+
+**© 2026 LiMeiHua. All Rights Reserved.**
